@@ -1,9 +1,9 @@
 Package: funbiome
-Title: What the Package Does (one line, title case)
-Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Title: Analysis of Temporal Microbiota
+Version: 0.1.0
+Authors@R: person("Jim", "Java", email = "james.j.java@gmail.com", role = c("aut", "cre"))
+Description: Pipeline for analyzing temporal microbiota using functional regression and time-varying clustering.
 Depends: R (>= 3.6.0)
-License: What license is it under?
+License: Artistic-2.0
 Encoding: UTF-8
 LazyData: true
