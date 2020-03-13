@@ -3,7 +3,7 @@
 #' @export
 newdata_from_model <- function(m)
 {
-  tail(as.data.frame(sapply(rbind(model.frame(m), NA), Hmisc::impute, simplify=FALSE)), 1)
+  tail(as.data.frame(sapply(rbind(model.frame(m), NA), Hmisc::impute, simplify = FALSE)), 1)
 }
 
 

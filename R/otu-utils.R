@@ -6,8 +6,8 @@ taxa_names <- c("kingdom", "phylum", "class", "order", "family", "genus", "speci
 #' @export
 taxa_fun <- function(x)
 {
-  taxa <- sub("^[a-z]__", "", str_split(x, ";")[[1]], perl=TRUE)
-  taxa <- gsub("^$", "All", taxa, perl=TRUE)
+  taxa <- sub("^[a-z]__", "", str_split(x, ";")[[1]], perl = TRUE)
+  taxa <- gsub("^$", "All", taxa, perl = TRUE)
   length(taxa) <- length(taxa_names)
   names(taxa) <- taxa_names
 
@@ -88,10 +88,10 @@ GetSamplesByTaxonomicGroupsFactory <- function(taxa) {
 
 ## Log transform the filtered data.
 #' @export
-transform_abundances <- function(m, trans_fun=function(x) log2(x + 1))
+transform_abundances <- function(m, trans_fun = function(x) log2(x + 1))
 {
   m2 <- data.table::copy(m)
-  m2[, 4:ncol(m2) := lapply(m2[, 4:ncol(m2), with=FALSE], trans_fun)] # I.e. use only columns 4+.
+  m2[, 4:ncol(m2) :=  lapply(m2[, 4:ncol(m2), with = FALSE], trans_fun)] # I.e. use only columns 4+.
 
   m2
 }

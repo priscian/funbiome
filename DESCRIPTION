@@ -1,9 +1,13 @@
 Package: funbiome
 Title: Analysis of Temporal Microbiota
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: person("Jim", "Java", email = "james.j.java@gmail.com", role = c("aut", "cre"))
 Description: Pipeline for analyzing temporal microbiota using functional regression and time-varying clustering.
 Depends: R (>= 3.6.0)
+Imports: plinth, data.table
+Remotes: github::priscian/plinth
+VignetteBuilder: knitr
 License: Artistic-2.0
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.0.2
